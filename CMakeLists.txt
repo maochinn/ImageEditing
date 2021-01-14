@@ -10,6 +10,7 @@ include_directories(${LIB_DIR})
 
 # add C/C++ > preprocess: "XKEYCHECK_H"
 add_Definitions("-D_XKEYCHECK_H")
+add_definitions(-DPROJECT_DIR="${PROJECT_SOURCE_DIR}")
 
 add_executable(ImageEditing 
     ${SRC_DIR}Main.cpp
